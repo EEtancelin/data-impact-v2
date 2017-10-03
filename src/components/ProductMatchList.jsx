@@ -3,7 +3,7 @@ import ProductMatch from '../productMatch/ProductMatch.jsx'
 
 const ProductMatchList = (props) => {
   return (
-    <div className="fx-sa fx-wrap mt-m">
+    <div className="fx-r-sa fx-wrap mt-m">
       { props.products.map( product => {
         return (
           <ProductMatch product={product}/>

@@ -5,7 +5,7 @@ import { Card, Icon, Button, Image } from 'semantic-ui-react'
 
 const Attribute = (attr, value) => {
   return (
-    <div className='mb-s'>
+    <div className='mb-xs'>
       <span className= 'ft-wb'>
         {attr} :
       </span>
@@ -21,16 +21,34 @@ class Product extends React.Component {
     const product = this.props.product;
     console.log(product);
     return (
-      <Card className="m-s mh-l">
-            <Image src='http://ouionatousledroitdebienmanger.fr/img/bleublanccoeur/produits/200/Casino-Jambon-superieur.jpeg'
-             className='match-thumbnail'/>
-          <Card.Content>
-            {Attribute('Marque', product.marque)}
-            {Attribute('Cat. ensg.', product.categorieenseigne)}
-            {Attribute('Ean', product.ean)}
-            {Attribute('Ref. ensg.', product.refproduitenseigne)}
-          </Card.Content>
-      </Card>
+      <div className='container'>
+
+        <div className='row mt-s'>
+              <Image src={product.nomvignette}
+               className=' col-md-3 match-thumbnail'/>
+               <div className="col-md-6 fx-c-sb" >
+                <div className="product-title mb-s" >
+                  <h3 className='product-title'> {product.libelle} </h3>
+                </div>
+               <div className="fx-r-sa" >
+                 <div >
+                   {Attribute('Marque', product.marque)}
+                   {Attribute('Ean', product.ean)}
+                   {Attribute('Packaging', product.packaging)}
+                 </div>
+                 <div >
+                  {Attribute('Ref. ensg.', product.refproduitenseigne)}
+                 {Attribute('Ref. pdt', product.refproduit)}
+                  {Attribute('Cat. ensg.', product.categorieenseigne)}
+                 </div>
+              </div>
+               </div>
+
+            <div className="col-md-3">
+            sdsds
+            </div>
+            </div>
+          </div>
     );
   }
 }

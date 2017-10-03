@@ -27,7 +27,7 @@ const MatchingBadge =(value) => {
 const ProductMatch = (props) => (
   <Card className="relative">
     <Image src='http://ouionatousledroitdebienmanger.fr/img/bleublanccoeur/produits/200/Casino-Jambon-superieur.jpeg'
-     className='match-thumbnail fx-sa'/>
+     className='match-thumbnail fx-r-sa'/>
     <Card.Content>
       {MatchingBadge(props.product.matching)}
       <Card.Header>
