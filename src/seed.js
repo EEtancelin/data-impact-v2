@@ -1,4 +1,4 @@
-const seed = [[
+const seed = [
     {
         "idappcat": "2693,4B,25C,178D,372E,904F",
         "refproduitenseigne": 1268674,
@@ -11,8 +11,7 @@ const seed = [[
         "prob": "0.0011",
         "nomvignette": "https://images-eu.ssl-images-amazon.com/images/I/41t3MSPAMOL._AC_US160_.jpg"
     }
-],
-[
+,
     {
         "idappcat": "2693,4B,25C,178D,372E,904F",
         "refproduitenseigne": 1265026,
@@ -25,8 +24,7 @@ const seed = [[
         "prob": "0.0011",
         "nomvignette": "https://images-eu.ssl-images-amazon.com/images/I/41gVWgTjAdL._AC_US160_.jpg"
     }
-],
-[
+,
     {
         "idappcat": "2693,4B,25C,178D,372E,904F",
         "refproduitenseigne": 608356,
@@ -39,8 +37,7 @@ const seed = [[
         "prob": "0.0007",
         "nomvignette": "http://www.coradrive.fr/typo3temp/170x170/170x170-1383732053-9eff891048.jpg"
     }
-],
-[
+,
     {
         "idappcat": "2693,4B,25C,178D,372E,904F",
         "refproduitenseigne": 1259819,
@@ -53,8 +50,7 @@ const seed = [[
         "prob": "0.0002",
         "nomvignette": "https://images-eu.ssl-images-amazon.com/images/I/511IOpLy5yL._AC_US160_.jpg"
     }
-],
-[
+,
     {
         "idappcat": "2693,4B,25C,178D,372E,904F",
         "refproduitenseigne": 1259818,
@@ -67,8 +63,7 @@ const seed = [[
         "prob": "0.0002",
         "nomvignette": "https://images-eu.ssl-images-amazon.com/images/I/51T2ouLvQJL._AC_US160_.jpg"
     }
-],
-[
+,
     {
         "idappcat": "2693,4B,25C,178D,372E,904F",
         "refproduitenseigne": 1268177,
@@ -81,8 +76,7 @@ const seed = [[
         "prob": "0.0001",
         "nomvignette": "https://images-eu.ssl-images-amazon.com/images/I/41Y-jBIPOHL._AC_US160_.jpg"
     }
-],
-[
+,
     {
         "idappcat": "2693,4B,25C,178D,372E,904F",
         "refproduitenseigne": 1268675,
@@ -95,8 +89,7 @@ const seed = [[
         "prob": "0.0000",
         "nomvignette": "https://images-eu.ssl-images-amazon.com/images/I/51TubOC8zGL._AC_US160_.jpg"
     }
-],
-[
+,
     {
         "idappcat": "2693,4B,25C,178D,372E,904F",
         "refproduitenseigne": 1261980,
@@ -109,8 +102,7 @@ const seed = [[
         "prob": "0.0000",
         "nomvignette": "https://images-eu.ssl-images-amazon.com/images/I/51P4eqbW2wL._AC_US160_.jpg"
     }
-],
-[
+,
     {
         "idappcat": "2693,4B,25C,178D,372E,904F",
         "refproduitenseigne": 1268109,
@@ -123,8 +115,7 @@ const seed = [[
         "prob": "0.0000",
         "nomvignette": "https://images-eu.ssl-images-amazon.com/images/I/51oGPTVDEzL._AC_US160_.jpg"
     }
-],
-[
+,
     {
         "idappcat": '2693,4B,25C,178D,372E,904F',
         "refproduitenseigne": 1261580,
@@ -137,5 +128,5 @@ const seed = [[
         "prob": "0.0000",
         "nomvignette": "https://images-eu.ssl-images-amazon.com/images/I/41DIFjQi-jL._AC_US160_.jpg"
     }
-]]
+]
 export default seed;
