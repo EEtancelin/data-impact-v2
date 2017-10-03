@@ -1,0 +1,3 @@
+[submodule "assets/stylesheets"]
+	path = assets/stylesheets
+	url = https://github.com/eetancelin/stylesheets
