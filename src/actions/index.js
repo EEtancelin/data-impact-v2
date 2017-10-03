@@ -1,43 +1,23 @@
-const BASE_URL = 'https://wagon-garage-api.herokuapp.com';
+  const headers = { authorization : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OWM1NDYzOTFiNTU5OTA1MDgzYjQ5NTAiLCJpYXQiOjE1MDYxMDA5NDF9.KRpAhVvp9m9dbIbO47OwnvC6iSEraXutdlB_RTgk5Lo'}
 
-export function fetchCars(garage) {
-  const url = `${BASE_URL}/${garage}/cars`;
-  const promise = fetch(url)
-    .then(r => r.json());
+const TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OWM1NDYzOTFiNTU5OTA1MDgzYjQ5NTAiLCJpYXQiOjE1MDYxMDA5NDF9.KRpAhVvp9m9dbIbO47OwnvC6iSEraXutdlB_RTgk5Lo"
+  const URL = `http://62.210.250.109:3050/api/init.json?authorization=${TOKEN}`;
+
+const header = () => {
+  return (
+    new Headers({
+      authorization : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OWM1NDYzOTFiNTU5OTA1MDgzYjQ5NTAiLCJpYXQiOjE1MDYxMDA5NDF9.KRpAhVvp9m9dbIbO47OwnvC6iSEraXutdlB_RTgk5Lo',
+      mode: 'no-cors'
+    })
+  );
+};
+
+export function fetchProducts() {
+  const promise = fetch(URL).then(r => r.json())
+  .catch(err => console.log(err))
 
   return {
-    type: 'FETCH_CARS',
+    type: 'FETCH_PRODUCTS',
     payload: promise // Will be resolved by redux-promise
-  };
-}
-
-export function removeCar(history, car) {
-  const url = `${BASE_URL}/cars/${car.id}`;
-  fetch(url, { method: 'DELETE' })
-    .then(r => r.json())
-    .then(() => history.push(""));
-
-  return {
-    type: 'REMOVE_CAR',
-    payload: car
-  };
-}
-
-export function addCar(garage, car, callback) {
-  const url = `${BASE_URL}/${garage}/cars`;
-  const request = fetch(url, {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(car)
-  }).then(r => r.json())
-    .then(() => callback());
-
-
-  return {
-    type: 'ADD_CAR',
-    payload: request // Will be resolved by redux-promise
   };
 }
