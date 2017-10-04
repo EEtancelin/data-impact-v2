@@ -45,7 +45,7 @@ class Product extends React.Component {
                </div>
 
             <div className="col-md-3">
-            sdsds
+            
             </div>
             </div>
           </div>
